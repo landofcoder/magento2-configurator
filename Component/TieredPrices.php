@@ -1,11 +1,11 @@
 <?php
 
-namespace CtiDigital\Configurator\Component;
+namespace Lof\Configurator\Component;
 
-use CtiDigital\Configurator\Api\ComponentInterface;
-use CtiDigital\Configurator\Api\LoggerInterface;
-use CtiDigital\Configurator\Component\Product\AttributeOption;
-use CtiDigital\Configurator\Exception\ComponentException;
+use Lof\Configurator\Api\ComponentInterface;
+use Lof\Configurator\Api\LoggerInterface;
+use Lof\Configurator\Component\Product\AttributeOption;
+use Lof\Configurator\Exception\ComponentException;
 use FireGento\FastSimpleImport\Model\ImporterFactory;
 
 /**

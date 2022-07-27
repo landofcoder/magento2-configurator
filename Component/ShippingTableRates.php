@@ -1,8 +1,8 @@
 <?php
-namespace CtiDigital\Configurator\Component;
+namespace Lof\Configurator\Component;
 
-use CtiDigital\Configurator\Api\ComponentInterface;
-use CtiDigital\Configurator\Api\LoggerInterface;
+use Lof\Configurator\Api\ComponentInterface;
+use Lof\Configurator\Api\LoggerInterface;
 use Magento\OfflineShipping\Model\ResourceModel\Carrier\TablerateFactory;
 use Magento\OfflineShipping\Model\ResourceModel\Carrier\Tablerate;
 use Magento\Store\Model\WebsiteFactory;

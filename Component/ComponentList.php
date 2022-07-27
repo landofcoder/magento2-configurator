@@ -1,8 +1,8 @@
 <?php
 
-namespace CtiDigital\Configurator\Component;
+namespace Lof\Configurator\Component;
 
-use CtiDigital\Configurator\Api\ComponentListInterface;
+use Lof\Configurator\Api\ComponentListInterface;
 
 class ComponentList implements ComponentListInterface
 {

@@ -1,11 +1,11 @@
 <?php
 /**
- * @package  CtiDigital\Configurator
- * @author Bartosz Herba <b.herba@ctidigital.com>
- * @copyright 2017 CtiDigital
+ * @package  Lof\Configurator
+ * @author Bartosz Herba <b.herba@Lof.com>
+ * @copyright 2017 Lof
  */
 
-namespace CtiDigital\Configurator\Api;
+namespace Lof\Configurator\Api;
 
 /**
  * Interface ComponentProcessorInterface

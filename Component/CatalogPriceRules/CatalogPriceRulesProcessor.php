@@ -1,14 +1,14 @@
 <?php
 /**
- * @package  CtiDigital\Configurator
- * @author Bartosz Herba <b.herba@ctidigital.com>
- * @copyright 2017 CtiDigital
+ * @package  Lof\Configurator
+ * @author Bartosz Herba <b.herba@Lof.com>
+ * @copyright 2017 Lof
  */
 
-namespace CtiDigital\Configurator\Component\CatalogPriceRules;
+namespace Lof\Configurator\Component\CatalogPriceRules;
 
-use CtiDigital\Configurator\Api\ComponentProcessorInterface;
-use CtiDigital\Configurator\Api\LoggerInterface;
+use Lof\Configurator\Api\ComponentProcessorInterface;
+use Lof\Configurator\Api\LoggerInterface;
 use Magento\CatalogRule\Api\CatalogRuleRepositoryInterface;
 use Magento\CatalogRule\Api\Data\RuleInterfaceFactory;
 use Magento\CatalogRule\Model\Rule;

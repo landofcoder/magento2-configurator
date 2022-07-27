@@ -1,11 +1,11 @@
 <?php
-namespace CtiDigital\Configurator\Component;
+namespace Lof\Configurator\Component;
 
-use CtiDigital\Configurator\Api\ComponentInterface;
+use Lof\Configurator\Api\ComponentInterface;
 use Magento\User\Model\UserFactory;
 use Magento\Authorization\Model\RoleFactory;
-use CtiDigital\Configurator\Api\LoggerInterface;
-use CtiDigital\Configurator\Exception\ComponentException;
+use Lof\Configurator\Api\LoggerInterface;
+use Lof\Configurator\Exception\ComponentException;
 
 /**
  * @SuppressWarnings(PHPMD.ShortVariable)

@@ -1,15 +1,15 @@
 <?php
 /**
- * @package  CtiDigital\Configurator
+ * @package  Lof\Configurator
  * @author Bartosz Herba <bartoszherba@gmail.com>
- * @copyright 2017 CtiDigital
+ * @copyright 2017 Lof
  */
 
-namespace CtiDigital\Configurator\Component;
+namespace Lof\Configurator\Component;
 
-use CtiDigital\Configurator\Api\ComponentInterface;
-use CtiDigital\Configurator\Api\LoggerInterface;
-use CtiDigital\Configurator\Component\Processor\SqlSplitProcessor;
+use Lof\Configurator\Api\ComponentInterface;
+use Lof\Configurator\Api\LoggerInterface;
+use Lof\Configurator\Component\Processor\SqlSplitProcessor;
 
 /**
  * Class Sql - Runs raw SQL queries - generally a fallback for when a configurator component is not available.

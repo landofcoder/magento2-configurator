@@ -1,10 +1,10 @@
 <?php
 
-namespace CtiDigital\Configurator\Component;
+namespace Lof\Configurator\Component;
 
-use CtiDigital\Configurator\Api\ComponentInterface;
-use CtiDigital\Configurator\Api\LoggerInterface;
-use CtiDigital\Configurator\Exception\ComponentException;
+use Lof\Configurator\Api\ComponentInterface;
+use Lof\Configurator\Api\LoggerInterface;
+use Lof\Configurator\Exception\ComponentException;
 use Magento\Widget\Model\ResourceModel\Widget\Instance\Collection as WidgetCollection;
 use Magento\Widget\Model\Widget\Instance;
 use Magento\Widget\Model\Widget\InstanceFactory as WidgetInstanceFactory;

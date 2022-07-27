@@ -1,9 +1,9 @@
 <?php
 
-namespace CtiDigital\Configurator\Component;
+namespace Lof\Configurator\Component;
 
-use CtiDigital\Configurator\Api\LoggerInterface;
-use CtiDigital\Configurator\Exception\ComponentException;
+use Lof\Configurator\Api\LoggerInterface;
+use Lof\Configurator\Exception\ComponentException;
 use Magento\Customer\Model\Customer;
 use Magento\Eav\Setup\EavSetup;
 use Magento\Framework\Exception\LocalizedException;

@@ -1,7 +1,7 @@
 <?php
-namespace CtiDigital\Configurator\Component\Product;
+namespace Lof\Configurator\Component\Product;
 
-use CtiDigital\Configurator\Api\LoggerInterface;
+use Lof\Configurator\Api\LoggerInterface;
 use Magento\Framework\Filesystem;
 use Magento\Framework\App\Filesystem\DirectoryList;
 use FireGento\FastSimpleImport\Helper\Config;

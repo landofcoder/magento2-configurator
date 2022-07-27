@@ -1,10 +1,10 @@
 <?php
 
-namespace CtiDigital\Configurator\Component;
+namespace Lof\Configurator\Component;
 
-use CtiDigital\Configurator\Api\ComponentInterface;
-use CtiDigital\Configurator\Exception\ComponentException;
-use CtiDigital\Configurator\Api\LoggerInterface;
+use Lof\Configurator\Api\ComponentInterface;
+use Lof\Configurator\Exception\ComponentException;
+use Lof\Configurator\Api\LoggerInterface;
 use Magento\Framework\App\Config\ScopeConfigInterface;
 use Magento\Framework\Encryption\EncryptorInterface;
 use Magento\Store\Model\StoreFactory;

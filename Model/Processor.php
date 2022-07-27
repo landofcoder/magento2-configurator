@@ -1,12 +1,12 @@
 <?php
 
-namespace CtiDigital\Configurator\Model;
+namespace Lof\Configurator\Model;
 
-use CtiDigital\Configurator\Api\ComponentInterface;
-use CtiDigital\Configurator\Api\FileComponentInterface;
-use CtiDigital\Configurator\Api\ComponentListInterface;
-use CtiDigital\Configurator\Api\LoggerInterface;
-use CtiDigital\Configurator\Exception\ComponentException;
+use Lof\Configurator\Api\ComponentInterface;
+use Lof\Configurator\Api\FileComponentInterface;
+use Lof\Configurator\Api\ComponentListInterface;
+use Lof\Configurator\Api\LoggerInterface;
+use Lof\Configurator\Exception\ComponentException;
 use Exception;
 use Symfony\Component\Yaml\Parser;
 use Magento\Framework\App\State;
@@ -24,6 +24,10 @@ class Processor
     const SOURCE_YAML = 'yaml';
     const SOURCE_CSV = 'csv';
     const SOURCE_JSON = 'json';
+
+    public array $ignoreDataSource = [
+        'seller_products'
+    ];
 
     /**
      * @var string
@@ -211,6 +215,16 @@ class Processor
 
         $sourceType = (isset($componentConfig['type']) === true) ? $componentConfig['type'] : null;
 
+        // If alias in ignore list, then excute the component with
+        if (in_array($componentAlias, $this->ignoreDataSource) ){
+            try {
+                $sourceData = [];
+                $component->execute($sourceData);
+            } catch (ComponentException $e) {
+                throw $e;
+            }
+        }
+
         if (isset($componentConfig['sources'])) {
             foreach ($componentConfig['sources'] as $source) {
                 try {
@@ -359,6 +373,11 @@ class Processor
                     }
                 }
 
+                // If alias is in ignore list, then continue without source
+                if (in_array($componentAlias, $this->ignoreDataSource) ){
+                    $componentHasSource = true;
+                }
+
                 if ($componentHasSource === false) {
                     throw new ComponentException(
                         sprintf('It appears there are no data sources for the %s component.', $componentAlias)
@@ -380,7 +399,7 @@ class Processor
         }
     }
 
-    private function parseData($source, $sourceType)
+    public function parseData($source, $sourceType)
     {
         if ($this->canParseAndProcess($source) === true) {
             $ext = ($sourceType !== null) ? $sourceType : $this->getExtension($source);

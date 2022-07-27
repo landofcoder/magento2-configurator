@@ -1,8 +1,8 @@
 <?php
 
-namespace CtiDigital\Configurator\Api;
+namespace Lof\Configurator\Api;
 
-use CtiDigital\Configurator\Model\Component\ComponentAbstract;
+use Lof\Configurator\Model\Component\ComponentAbstract;
 
 interface ConfigInterface
 {
