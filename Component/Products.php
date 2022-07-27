@@ -1,15 +1,15 @@
 <?php
-namespace CtiDigital\Configurator\Component;
+namespace Lof\Configurator\Component;
 
-use CtiDigital\Configurator\Api\ComponentInterface;
+use Lof\Configurator\Api\ComponentInterface;
 use Magento\Catalog\Model\ProductFactory;
-use CtiDigital\Configurator\Api\LoggerInterface;
-use CtiDigital\Configurator\Component\Product\Image;
-use CtiDigital\Configurator\Component\Product\AttributeOption;
+use Lof\Configurator\Api\LoggerInterface;
+use Lof\Configurator\Component\Product\Image;
+use Lof\Configurator\Component\Product\AttributeOption;
 use FireGento\FastSimpleImport\Model\ImporterFactory;
-use CtiDigital\Configurator\Exception\ComponentException;
-use CtiDigital\Configurator\Component\Product\ValidatorFactory;
-use CtiDigital\Configurator\Component\Product\Validator;
+use Lof\Configurator\Exception\ComponentException;
+use Lof\Configurator\Component\Product\ValidatorFactory;
+use Lof\Configurator\Component\Product\Validator;
 
 /**
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)

@@ -1,14 +1,14 @@
 <?php
 
-namespace CtiDigital\Configurator\Component;
+namespace Lof\Configurator\Component;
 
-use CtiDigital\Configurator\Api\ComponentInterface;
-use CtiDigital\Configurator\Exception\ComponentException;
+use Lof\Configurator\Api\ComponentInterface;
+use Lof\Configurator\Exception\ComponentException;
 use Magento\SalesSequence\Model\Builder;
 use Magento\SalesSequence\Model\EntityPool;
 use Magento\SalesSequence\Model\Config;
 use Magento\Store\Api\StoreRepositoryInterface;
-use CtiDigital\Configurator\Api\LoggerInterface;
+use Lof\Configurator\Api\LoggerInterface;
 
 class Sequence implements ComponentInterface
 {

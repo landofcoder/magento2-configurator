@@ -1,11 +1,11 @@
 <?php
-namespace CtiDigital\Configurator\Component;
+namespace Lof\Configurator\Component;
 
-use CtiDigital\Configurator\Api\ComponentInterface;
+use Lof\Configurator\Api\ComponentInterface;
 use Magento\Customer\Model\GroupFactory;
 use Magento\Tax\Model\ClassModelFactory;
-use CtiDigital\Configurator\Exception\ComponentException;
-use CtiDigital\Configurator\Api\LoggerInterface;
+use Lof\Configurator\Exception\ComponentException;
+use Lof\Configurator\Api\LoggerInterface;
 
 /**
  * @SuppressWarnings(PHPMD.ShortVariable)

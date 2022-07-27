@@ -1,10 +1,10 @@
 <?php
 
-namespace CtiDigital\Configurator\Component;
+namespace Lof\Configurator\Component;
 
-use CtiDigital\Configurator\Api\ComponentInterface;
-use CtiDigital\Configurator\Api\LoggerInterface;
-use CtiDigital\Configurator\Exception\ComponentException;
+use Lof\Configurator\Api\ComponentInterface;
+use Lof\Configurator\Api\LoggerInterface;
+use Lof\Configurator\Exception\ComponentException;
 use Magento\Catalog\Model\CategoryFactory;
 use Magento\Store\Model\GroupFactory;
 use Magento\Framework\App\Filesystem\DirectoryList;
@@ -152,20 +152,21 @@ class Categories implements ComponentInterface
                         break;
                     case 'image':
                         // phpcs:ignore Magento2.Functions.DiscouragedFunction
-                        $img = basename($value);
+//                        $img = basename($value);
+                        $img = $value;
                         // phpcs:ignore Magento2.Functions.DiscouragedFunction
-                        $path = parse_url($value);
-                        $catMediaDir = $this->dirList->getPath('media') . '/' . 'catalog' . '/' . 'category' . '/';
-
-                        if (!array_key_exists('host', $path)) {
-                            $value = BP . '/' . trim($value, '/');
-                        }
-
-                        // phpcs:ignore
-                        if (!@copy($value, $catMediaDir . $img)) {
-                            $this->log->logError('Failed to find image: ' . $value, 1);
-                            break;
-                        }
+//                        $path = parse_url($value);
+//                        $catMediaDir = $this->dirList->getPath('media') . '/' . 'catalog' . '/' . 'category' . '/';
+//
+//                        if (!array_key_exists('host', $path)) {
+//                            $value = BP . '/' . trim($value, '/');
+//                        }
+//
+//                        // phpcs:ignore
+//                        if (!@copy($value, $catMediaDir . $img)) {
+//                            $this->log->logError('Failed to find image: ' . $value, 1);
+//                            break;
+//                        }
 
                         $category->setImage($img);
                         break;

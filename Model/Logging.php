@@ -1,8 +1,8 @@
 <?php
 
-namespace CtiDigital\Configurator\Model;
+namespace Lof\Configurator\Model;
 
-use CtiDigital\Configurator\Api\LoggerInterface;
+use Lof\Configurator\Api\LoggerInterface;
 use Symfony\Component\Console\Output\ConsoleOutput;
 use Symfony\Component\Console\Output\OutputInterface;
 

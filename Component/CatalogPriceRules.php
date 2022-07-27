@@ -1,15 +1,15 @@
 <?php
 /**
- * @package  CtiDigital\Configurator
- * @author Bartosz Herba <b.herba@ctidigital.com>
- * @copyright 2017 CtiDigital
+ * @package  Lof\Configurator
+ * @author Bartosz Herba <b.herba@Lof.com>
+ * @copyright 2017 Lof
  */
 
-namespace CtiDigital\Configurator\Component;
+namespace Lof\Configurator\Component;
 
-use CtiDigital\Configurator\Api\ComponentInterface;
-use CtiDigital\Configurator\Api\LoggerInterface;
-use CtiDigital\Configurator\Component\CatalogPriceRules\CatalogPriceRulesProcessor;
+use Lof\Configurator\Api\ComponentInterface;
+use Lof\Configurator\Api\LoggerInterface;
+use Lof\Configurator\Component\CatalogPriceRules\CatalogPriceRulesProcessor;
 use Magento\CatalogRule\Api\Data\RuleInterfaceFactory;
 
 class CatalogPriceRules implements ComponentInterface

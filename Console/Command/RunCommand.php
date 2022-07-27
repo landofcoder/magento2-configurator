@@ -1,9 +1,9 @@
 <?php
 
-namespace CtiDigital\Configurator\Console\Command;
+namespace Lof\Configurator\Console\Command;
 
-use CtiDigital\Configurator\Exception\ConfiguratorAdapterException;
-use CtiDigital\Configurator\Model\Processor;
+use Lof\Configurator\Exception\ConfiguratorAdapterException;
+use Lof\Configurator\Model\Processor;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputDefinition;
 use Symfony\Component\Console\Input\InputInterface;

@@ -1,5 +1,5 @@
 {
-  "name": "ctidigital/magento2-configurator",
+  "name": "landofcoder/magento2-configurator",
   "description": "Keep magento persistently configured using files",
   "type":"magento2-module",
   "repositories": [
@@ -20,11 +20,11 @@
     "phpunit/phpunit": "^6.2",
     "magento/magento-coding-standard": "5"
   },
-  "version": "3.1.3",
+  "version": "1.0.0",
   "autoload": {
     "files": [ "registration.php" ],
     "psr-4": {
-      "CtiDigital\\Configurator\\": ""
+      "Lof\\Configurator\\": ""
     }
   }
  }

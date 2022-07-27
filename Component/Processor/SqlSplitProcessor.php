@@ -1,13 +1,13 @@
 <?php
 /**
- * @package  CtiDigital\Configurator
+ * @package  Lof\Configurator
  * @author Bartosz Herba <bartoszherba@gmail.com>
- * @copyright 2017 CtiDigital
+ * @copyright 2017 Lof
  */
 
-namespace CtiDigital\Configurator\Component\Processor;
+namespace Lof\Configurator\Component\Processor;
 
-use CtiDigital\Configurator\Api\LoggerInterface;
+use Lof\Configurator\Api\LoggerInterface;
 use Magento\Framework\App\ResourceConnection;
 use Magento\Framework\DB\Adapter\AdapterInterface;
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace CtiDigital\Configurator\Console\Command;
+namespace Lof\Configurator\Console\Command;
 
-use CtiDigital\Configurator\Api\ComponentListInterface;
-use CtiDigital\Configurator\Exception\ConfiguratorAdapterException;
+use Lof\Configurator\Api\ComponentListInterface;
+use Lof\Configurator\Exception\ConfiguratorAdapterException;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;

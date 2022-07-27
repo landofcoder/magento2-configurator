@@ -1,8 +1,8 @@
 <?php
 
-namespace CtiDigital\Configurator\Component\Product;
+namespace Lof\Configurator\Component\Product;
 
-use CtiDigital\Configurator\Component\Products;
+use Lof\Configurator\Component\Products;
 use Firegento\FastSimpleImport\Model\Importer;
 use FireGento\FastSimpleImport\Model\Adapters\ImportAdapterFactoryInterface;
 
