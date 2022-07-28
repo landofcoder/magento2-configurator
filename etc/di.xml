@@ -9,6 +9,8 @@
                 type="Lof\Configurator\Model\Logging" />
     <preference for="Lof\Configurator\Api\ComponentListInterface"
                 type="Lof\Configurator\Component\ComponentList" />
+    <preference for="FireGento\FastSimpleImport\Model\Import\Category"
+                type="Lof\ConvertData\Model\Import\Category"/>
 
     <type name="Magento\Framework\Console\CommandList">
         <arguments>
